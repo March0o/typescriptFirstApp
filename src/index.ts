@@ -8,6 +8,8 @@ const app: Application = express();
 
 app.use(morgan("tiny")); 
 
+app.use(express.json()); 
+
 app.use('/api/v1/users', userRoutes) 
  
 app.get("/ping", async (_req : Request, res: Response) => { 
@@ -19,7 +21,7 @@ app.get("/ping", async (_req : Request, res: Response) => {
  }); 
 }); 
 
-app.get("/bananas", async (_req : Request, res: Response) => { 
+  app.get("/bananas", async (_req : Request, res: Response) => { 
 
     res.send({ 
    
@@ -46,7 +48,7 @@ app.get("/bananas", async (_req : Request, res: Response) => {
     }); 
    });  
 
- app.listen(PORT, () => { 
+   app.listen(PORT, () => { 
 
     console.log("Server is running on port  --", PORT); 
 
