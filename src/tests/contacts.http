@@ -10,9 +10,9 @@ content-type: application/json
 
 { "name" : "John Doe", 
 
-   "phonenumber" : "0871234567", 
+  "phonenumber" : "0871234567", 
 
-   "email": "jdoe123@gmail.com"} 
+  "email": "jdoe123@gmail.com"} 
 
 ###
 //  Get Users
@@ -26,7 +26,7 @@ content-type: application/json
 
 { "name" : "John Doe", 
 
-   "phonenumber" : "0871234567", 
+  "phonenumber" : "0871234567", 
 
-   "email": "jdoe123@gmail.com"} 
+  "email": "jdoe123@gmail.com"} 
 
